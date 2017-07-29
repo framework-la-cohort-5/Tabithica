@@ -1,0 +1,18 @@
+{
+    "manifest version": 2,
+    "name": "Tab Chrome Extension",
+    "version": "1.0",
+
+  // "default locale": "en",
+    "description": "Chrome Extension that organizes tabs.",
+    "browser action": {
+        "default_icons": {
+            "16": "../icon-16-pixel.png",
+            "24": "../icon-24-pixel.png",
+            "32": "../icon-32-pixel.png"
+    },
+
+    "default_title": "Tabs Chrome Extenstion",
+    "default_popup": "../popup.html"
+    }
+}
