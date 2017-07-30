@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // chrome.tabs.get(tabId, function(tab) {
 //   chrome.tabs.highlight({'tabs': tab.index}, function() {});
 // });
@@ -19,3 +20,14 @@
 //      document.getElementById("button").style.color = "red";
 //     });
 // }
+=======
+$("button").on("click",function(tab){
+
+
+
+  // fist try on changing the background color.
+  //chrome.tabs.executeScript({
+  //   code: "document.body.style.backgroundColor='red'"
+  // });
+});
+>>>>>>> f88dfea076f8a58ad8945ee27716f998478f7c67
