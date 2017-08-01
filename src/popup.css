@@ -1,0 +1,27 @@
+.container div{
+width: 15px;
+height: 15px;
+border: 1px black solid;
+border-radius: 35%;
+margin: 2px;
+float: left;
+}
+body{
+  background: black;
+}
+button{
+  color: black; 
+}
+
+#red{
+  background: red;
+}
+#blue{
+  background: blue;
+}
+#green{
+  background: green;
+}
+#yellow{
+  background: yellow;
+}
