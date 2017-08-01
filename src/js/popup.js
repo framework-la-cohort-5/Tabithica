@@ -1,33 +1,25 @@
-<<<<<<< HEAD
-// chrome.tabs.get(tabId, function(tab) {
-//   chrome.tabs.highlight({'tabs': tab.index}, function() {});
+// $("button").on("click",function(tab){
+//   // fist try on changing the background color.
+//         //chrome.tabs.executeScript({
+//         //   code: "document.body.style.backgroundColor='red'"
+//         // });
+//     var tabId = activeInfo.tabId;
+//     chrome.tabs.query({
+//         currentWindow: true,
+//         pinned: true
+//     }, function(tabs) {
+//         // Only move the tab if at least one tab is pinned
+//         if (tabs.length > 0) {
+//             var lastTab = tabs[ tabs.length - 1 ];
+//             var tabIndex = lastTab.index + 1;
+//             for (var i=0; i<tabs.length; ++i) {
+//                 if (tabs[i].id == tabId) {
+//                     // Current tab is pinned, so decrement the tabIndex by one.
+//                     --tabIndex;
+//                     break;
+//                 }
+//             }
+//             chrome.tabs.move(tabId, {index: tabIndex});
+//         }
+//     }); // End of chrome.tabs.query
 // });
-// chrome.tabs.getCurrent(tabId, function() { 
-//     chrome.tabs.highlight({'tabs': tab.index}, function() {});
-//     document.getElementById("button").style.color = "red";
-// });
-
-// function updateTab() {
-//     browser.browserAction.onClicked.addListener(() => {
-        
-//         function onError(error) {
-//         console.log(`Error: ${error}`);
-//   }
-
-//     var css = "body { border: 20px dotted pink; }";
-//     var insertingCSS = browser.tabs.insertCSS({code: css});
-//      insertingCSS.then(null, onError);
-//      document.getElementById("button").style.color = "red";
-//     });
-// }
-=======
-$("button").on("click",function(tab){
-
-
-
-  // fist try on changing the background color.
-  //chrome.tabs.executeScript({
-  //   code: "document.body.style.backgroundColor='red'"
-  // });
-});
->>>>>>> f88dfea076f8a58ad8945ee27716f998478f7c67
