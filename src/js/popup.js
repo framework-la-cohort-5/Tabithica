@@ -35,4 +35,3 @@ $("#move-right").on("click",function(){
         chrome.tabs.move(tabs[0].id, {index: -1});
     });
 });
-
