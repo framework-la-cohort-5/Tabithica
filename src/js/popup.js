@@ -1,25 +1,38 @@
-// $("button").on("click",function(tab){
-//   // fist try on changing the background color.
-//         //chrome.tabs.executeScript({
-//         //   code: "document.body.style.backgroundColor='red'"
-//         // });
-//     var tabId = activeInfo.tabId;
-//     chrome.tabs.query({
-//         currentWindow: true,
-//         pinned: true
-//     }, function(tabs) {
-//         // Only move the tab if at least one tab is pinned
-//         if (tabs.length > 0) {
-//             var lastTab = tabs[ tabs.length - 1 ];
-//             var tabIndex = lastTab.index + 1;
-//             for (var i=0; i<tabs.length; ++i) {
-//                 if (tabs[i].id == tabId) {
-//                     // Current tab is pinned, so decrement the tabIndex by one.
-//                     --tabIndex;
-//                     break;
-//                 }
-//             }
-//             chrome.tabs.move(tabId, {index: tabIndex});
-//         }
-//     }); // End of chrome.tabs.query
-// });
+$("#codingSession").on("click",function(tab){
+    chrome.tabs.create({url: 'http://google.com'}, function(data){});
+    chrome.tabs.create({url: 'http://github.com'}, function(data){});
+    chrome.tabs.create({url: 'http://developer.mozilla.org/en-US/docs/Web/javascript'}, function(data){});
+    chrome.tabs.create({url: 'http://pythontutor.com'}, function(data){});
+  
+});
+$("#pro").on("click",function(tab){
+    chrome.tabs.create({url: 'http://reddit.com'}, function(data){});
+    chrome.tabs.create({url: 'http://youtube.com'}, function(data){});
+    chrome.tabs.create({url: 'http://amazon.com'}, function(data){});
+});
+$("#news").on("click",function(tab){
+     chrome.tabs.create({url: 'http://reddit.com/r/news/'}, function(data){});
+     chrome.tabs.create({url: 'http://theverge.com'}, function(data){});
+     chrome.tabs.create({url: 'http://thenextweb.com'}, function(data){});
+     chrome.tabs.create({url: 'http://techcrunch.com'}, function(data){});
+});
+$("#career").on("click",function(tab){
+    chrome.tabs.create({url: 'http://monster.com'}, function(data){});
+    chrome.tabs.create({url: 'http://indeed.com'}, function(data){});
+    chrome.tabs.create({url: 'http://linkedin.com'}, function(data){});
+    chrome.tabs.create({url: 'http://goo.gl/4x3q9a'}, function(data){});
+});
+
+
+$("#move-left").on("click",function(){
+    chrome.tabs.query({active: true}, function(tabs){
+        chrome.tabs.move(tabs[0].id, {index: 0});
+    });
+});
+$("#move-right").on("click",function(){
+    chrome.tabs.query({active: true}, function(tabs){
+        console.log(tabs);
+        chrome.tabs.move(tabs[0].id, {index: -1});
+    });
+});
+

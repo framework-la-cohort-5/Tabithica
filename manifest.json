@@ -5,8 +5,8 @@
     "version": "1.0",
     "description": "Chrome Extension that organizes tabs.",
     "permissions": [
-      "tabs",
-      "activeTab"
+      "tabs"
+      // "activeTab"
     ],
     "browser_action": {
         "default_icons": {
@@ -25,7 +25,11 @@
     {
       "matches": ["<all_urls>"],
       "css": ["src/popup.css"],
-      "js": ["src/js/popup.js","src/js/jquery-3.2.1.min.js", "src/js/background.js"]
+      "js": ["src/js/popup.js"]
     }
-  ]
+  ],
+  "background": {
+    "scripts": ["src/js/jquery-3.2.1.min.js"],
+    "persistent": true
+  }
 }

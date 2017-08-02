@@ -1,0 +1,28 @@
+#containeR{
+width: 300px;
+height: 15px;
+/* border: 1px black solid;  */
+border-radius: 35%;
+margin: 2px;
+float: left;
+}
+#myBackground{
+    background: black;    
+}
+
+#codingSession{
+  float: left;
+}
+
+#red{
+  background: red;
+}
+#blue{
+  background: blue;
+}
+#green{
+  background: green;
+}
+#yellow{
+  background: yellow;
+}
