@@ -11,7 +11,12 @@ float: left;
 }
 
 #codingSession{
-  float: left;
+    border-style: dotted;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
 }
 #red{
   background: red;
