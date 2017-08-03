@@ -52,7 +52,7 @@
 hr.style1 {
 color: #f4d742
 }
-p{
+.myP{
   color:#f4d742;
   margin-left: 5px;
   margin-top:0
@@ -68,7 +68,7 @@ font-size: 90%
 #div4{
   margin-bottom: 5px;
 }
-/*button{
-  box-shadow: 5px 5px 10px gray;
-}*/
+button{
+
+}
 button:focus {outline:0;}

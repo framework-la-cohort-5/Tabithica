@@ -81,3 +81,25 @@ $("#sort").mouseover(function(){
 $("#sort").mouseout(function(){
   $(this).css(style4);
 })
+
+// color change
+$("#red").on("click",function(tab){
+chrome.tabs.executeScript({
+  code: "document.body.style.backgroundColor='red'"
+  });
+ });
+ $("#green").on("click",function(tab){
+ chrome.tabs.executeScript({
+   code: "document.body.style.backgroundColor='green'"
+   });
+  });
+  $("#blue").on("click",function(tab){
+  chrome.tabs.executeScript({
+    code: "document.body.style.backgroundColor='blue'"
+    });
+   });
+   $("#yellow").on("click",function(tab){
+   chrome.tabs.executeScript({
+     code: "document.body.style.backgroundColor='yellow'"
+     });
+    });
