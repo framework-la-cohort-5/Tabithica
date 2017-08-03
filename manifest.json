@@ -19,7 +19,7 @@
         "default_title": "Tabs Chrome Extenstion"
     },
     "icons": {
-        "128": "assets/icon-128-pixel.png"
+        "128": "assets/newIcon.png"
     },
     "content_scripts": [
     {
